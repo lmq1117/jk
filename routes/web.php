@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/test','WechatSdkTestController@test');
+Route::any('/wechat/yanzheng','WechatSdkTestController@yanzheng');
+Route::get('wechat/menu','WechatSdkTestController@showMenu');
+Route::get('wechat/addmenu','WechatSdkTestController@addMenu');
